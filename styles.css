@@ -1,0 +1,190 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #3a0043;
+  color: #fff;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #6a1b9a;
+}
+
+.logo-image {
+  height: 50px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-list li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.navbar-list li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.cart-container {
+  margin-left: 20px;
+}
+
+.cart-icon {
+  height: 30px;
+}
+
+/* Hero section styles */
+#hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-image: url('../assets/img/fondo1.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+}
+
+.hero-image img {
+  height: 400px;
+  object-fit: contain;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Cards section styles */
+#cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 100px 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: -2%;
+}
+
+.card {
+  position: relative;
+  width: calc(33.3333% - 2.6666%);
+  margin-bottom: 20px;
+  margin-right: 2%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.card:hover h3, .card:hover p, .card:hover .btn {
+  color: #fff;
+}
+
+.card .card-title-container h3 {
+  margin: 0;
+  font-size: 18px;
+  max-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 10%;
+}
+
+.card:hover .card-title-container {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+.card:hover h3 {
+  margin-top: 100%;
+}
+
+.card .btn {
+  display: inline-block;
+  background-color: transparent;
+  color: #6e2b93;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.card:hover:before {
+  opacity: 0%;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.card .btn:hover {
+  color: #4e1c6e;
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.card img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.card:hover h3 {
+  margin-top: 100%;
+}
+
+@media (max-width: 768px) {
+  #cards {
+  padding: 20px;
+  }
+  }
+    .card {
+    width: calc(50% - 10px);
+  }

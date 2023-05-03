@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>NUCBA NFT</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+      body {
+        background-color: #3b0040;
+      }
+      #cards {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      .card {
+        width: 100px;
+        position: relative;
+        overflow: hidden;
+      }
+      .card:hover .card-text {
+        transform: translateY(0%);
+      }
+      .card-image {
+        width: 100%;
+      }
+      .card-text {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 10px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.7);
+        transform: translateY(100%);
+        transition: transform 0.3s ease-in-out;
+      }
+      .card-text p {
+        margin: 0;
+      }
+      .card-text::before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.3);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+      .card:hover .card-text::before {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">
+        <img src="assets/img/logopagina.png" alt="NUCBA NFT Logo" class="logo-image">
+      </a>
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Acerca de</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+        <div class="cart-container">
+          <a href="#">
+            <img src="assets/img/carrito4.png" alt="Cart Icon" class="cart-icon">
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <div class="hero-info">
+          <h1>Los guerreros Z regresan</h1>
+          <p>Tras la noticia de nuevos capitulos de la mitica serie volvio a despertar el furor de sus miles de fanaticos, de la mano de la franquicia contenido nuevo que siempre mantiene actualizado las antiguas entregas del juego.</p>
+          <a href="#" class="btn">Suscribirse</a>
+          <a href="#" class="btn">Ver más</a>
+        </div>
+        <div class="hero-image">
+          <img src="assets/img/Portada.jpg" alt="NUCBA NFT Hero Image">
+        </div>
+      </section>
+      
+      <section id="cards">
+        <div class="card">
+          <img src="assets/img/DragonBallKakarot.jpg" alt="Dragon Ball Kakarot" class="card-image">
+          <div class="card-text">
+            <h3>Dragon Ball Kakarot</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor nisl sit amet ipsum molestie, eu tristique libero venenatis.</p>
+                        <a href="#" class="btn"></a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="assets/img/ImagenCentral.jpeg" alt="Imagen Central" class="card-image">
+                      <div class="card-text">
+                        <h3>Imagen Central</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor nisl sit amet ipsum molestie, eu tristique libero venenatis.</p>
+                        <a href="#" class="btn"></a>
+                      </div>
+                    </div>
+                    
+                    <div class="card">
+                      <img src="assets/img/DragonBallXenoverse2.jpeg" alt="Dragon Ball Xenoverse 2" class="card-image">
+                      <div class="card-text">
+                        <h3>Dragon Ball Xenoverse 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor nisl sit amet ipsum molestie, eu tristique libero venenatis.</p>
+                        <a href="#" class="btn"></a>
+                      </div>
+                    </div>
+                    
+                      </div>
+                    </div>
+                  </section>
+                </main>
+                <footer>
+                  <p>//Todos los derechos reservados ©AkiraToriyama</p>
+                </footer>
+              </body>
+              </html>                
